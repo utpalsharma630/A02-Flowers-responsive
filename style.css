@@ -10,7 +10,9 @@ header{
     max-width: 1140px;
     margin: 0 auto;
 }
-
+section{
+    margin-top: 100px;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -41,7 +43,28 @@ header{
 .nav-items-responsive{
     display: none;
 }
+/* banner section design */
+.banner{
+    display: flex;
+    align-items: center;
+}
 
+
+.banner-title-name{
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Noto Serif";
+    color: rgba(233, 90, 8, 1);
+}
+.banner-title-highlight{
+    color: rgba(0, 0, 0, 1);
+}
+.banner-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter";
+    font-size: 1.3rem;
+    font-weight: 400;
+}
 
 /* small device with responsive design */
 @media screen and (max-width:576px) {
@@ -58,5 +81,11 @@ header{
     }
     .logo img{
     width: 80px;
-}
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-image img{
+    width: 100%;
+    }
 }
