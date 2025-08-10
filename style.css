@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter-font-family{
+    font-family: "Inter", sans-serif;
+}
+.noto-serif-font{
+    font-family: "Noto Serif", serif;
+}
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 135px;
+}
+.nav-items ul, .nav-items-responsive ul{
+    display: flex;
+    gap: 48px;
+}
+.nav-items ul li,.nav-items-responsive ul li{
+    list-style: none;
+
+}
+.nav-items ul li a, .nav-items-responsive ul li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(137, 135, 161, 1);
+    font-family: Inter;
+}
+.nav-items .item-1,.nav-items .item-4, .nav-items-responsive .item-4,.nav-items-responsive .item-1{
+    font-weight: 600;
+    color: rgba(37, 36, 50, 1);
+}
+.nav-items-responsive{
+    display: none;
+}
+
+
+/* small device with responsive design */
+@media screen and (max-width:576px) {
+    
+    .nav-items-responsive{
+        display:block;
+    }
+    .nav-items{
+        display: none;
+        
+    }
+    .nav-items-responsive ul{
+        gap: 25px;
+    }
+    .logo img{
+    width: 80px;
+}
+}
