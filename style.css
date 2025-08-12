@@ -218,6 +218,8 @@ main{
 }
 /* colorful bunch design  */
 .bunch{
+    max-width: 1440px;
+    margin: auto;
     text-align: center;
     background-image: url(assets/news-letter-bg.png);
     padding: 150px 10px;
@@ -259,8 +261,53 @@ main{
     border: none;
     cursor: pointer;
 }
+/* footer style design */
+.footer{
+    max-width: 1140px;
+    margin:60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:110px ;
 
+    /* padding: 50px 160px; */
+}
+.footer-content{
+    max-width: 280px;
+}
+.footer-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "Inter";
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.footer-items{
+    display: flex;
+    gap: 110px;
+    
+}
+.footer-items ul{
+    padding: 0;
+}
+.footer-items li{
+    list-style: none;
+    margin-bottom:32px ;
+    
 
+}
+.footer-items li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Inter";
+    color: rgba(107, 114, 128, 1);
+    
+}
+
+.footer-icon{
+    display: flex;
+    gap: 24px;
+}
 
 
 /* small device with responsive design */
@@ -292,7 +339,12 @@ main{
         grid-template-columns: repeat(2,1fr);
         
     }
-    .flower-and-plants, .discount, .bunch-input{
+    .flower-and-plants,
+    .discount,
+    .bunch-input,
+    .footer,
+    .footer-items
+    {
         flex-direction: column;
     }
     .bunch{
@@ -319,7 +371,11 @@ main{
     .discount-one, .discount-two{
         background-size: 100%;
     }
-    
+    .footer,
+    .footer-items{
+        gap: 0px;
+        align-items: start;
+    }
 }
 
 /* medium device responsive design */
