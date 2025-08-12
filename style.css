@@ -147,7 +147,19 @@ main{
     gap: 20px;
 }
 .flower-image{
-   
+    position: relative;
+    display: inline-block;
+}
+.flower{
+    /* width: 100%; */
+    display: block;
+}
+.trusted-badge{
+   width: 280px;
+   height:auto;
+   position: absolute;
+   right:-120px;
+   top: -120px;
    
 }
 
@@ -347,6 +359,11 @@ main{
     {
         flex-direction: column;
     }
+
+    .trusted-badge{
+        display: none;
+    }
+
     .bunch{
         padding: 90px 10px;
         align-items: center;
@@ -396,5 +413,9 @@ main{
     .discount-1{
         gap: 0px;
     }
-    
+    .trusted-badge{
+        width: 180px;
+        top: -90px;
+        right: -90px;
+    }
 }
