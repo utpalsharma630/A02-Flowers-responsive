@@ -121,6 +121,108 @@ main{
     border: none;
     width: 100%;
 }
+/* flower and plants love design styles */
+
+
+.flower-and-plants{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.flower-plant-title-name{
+    color: rgba(0, 0, 0, 1);
+    font-family: "Noto Serif";
+    font-size: 3rem;
+    font-weight: 600;
+}
+.flower-plant-description{
+    color: rgba(0, 0, 0, 0.5);
+    font-family:" Inter";
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.flower-plant-description {
+    display: grid;
+    gap: 20px;
+}
+.flower-image{
+   
+   
+}
+
+/* discount section design */
+
+.discount{
+    display: flex;
+    justify-content: space-around;
+   
+    
+    
+}
+.discount-1{
+    max-width:38%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+   
+}
+.discount-1 h2{
+    color: rgba(255, 255, 255, 1);
+    font-family: "Noto Serif";
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+.discount-1 a{
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter";
+    font-size: 1rem;
+    font-weight: 400;
+}
+.discount-one{
+    background-image: url(assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    padding: 60px 50px;
+    /* background-size: 100%; */
+}
+.discount-two{
+    background-image: url(assets/deal-ana.png);
+    background-repeat: no-repeat;
+    padding: 60px 50px;
+    border-radius: 15px;
+    /* background-size: 100%; */
+}
+.discount-2{
+    max-width: 58%;
+    background-image: url(assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    padding: 160px 125px;
+    text-align: center;
+    border-radius: 15px;
+   
+}
+.discount-2 h2{
+    color: rgba(255, 255, 255, 1);
+    font-family: "Noto Serif";
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.discount-2 a{
+    color: rgba(255, 255, 255, 1);
+    font-family: "Inter";
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
 /* small device with responsive design */
 @media screen and (max-width:576px) {
     
@@ -140,7 +242,7 @@ main{
     .banner{
         flex-direction: column-reverse;
     }
-    .banner-image img, .card img{
+    .banner-image img, .card img, .flower-image img{
     width: 100%;
     }
     .card{
@@ -150,4 +252,49 @@ main{
         grid-template-columns: repeat(2,1fr);
         
     }
+    .flower-and-plants, .discount{
+        flex-direction: column;
+    }
+    
+    .discount-1{
+        
+        margin-bottom: 15px;
+    }
+    .discount-2, .discount-1{
+        max-width: 100%;
+    }
+    .discount-2{
+        padding: 70px;
+    }
+    .discount-2 h2{
+        font-size: 1.25rem;
+    }
+    .discount-2 a{
+         font-size: 1rem;
+        
+    }
+    .discount-one, .discount-two{
+        background-size: 100%;
+    }
+}
+
+/* medium device responsive design */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner{
+        flex-direction: column-reverse;
+    }
+    
+    .card-items{
+        grid-template-columns: repeat(3,1fr);
+        
+    }
+    .discount{
+        gap: 30px;
+        
+        
+    }
+    .discount-1{
+        gap: 0px;
+    }
+    
 }
